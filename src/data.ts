@@ -98,8 +98,8 @@ export const ALL_PROJECTS: Project[] = [
     price: "$95",
     descriptionEn: "Liby Master Fragrance Grasse Rose Hand Cream, blending French Grasse May Rose flower water with luxury botanical extracts to deeply nourish hand skin. Light texture, easily absorbed, leaving hands silky smooth with an elegant rose salon fragrance.",
     descriptionCn: "立白大师香氛格拉斯玫瑰护手霜，融合法国格拉斯五月玫瑰花水与奢华植物精粹，深层滋养手部肌肤。质地轻盈易吸收，令双手如丝般柔滑，伴随典雅玫瑰沙龙香氛。",
-    images: ["https://i.ibb.co/931N38YD/image-04.jpg"],
-    bannerImage: "https://i.ibb.co/931N38YD/image-04.jpg",
+    images: ["https://bee-reg-ac.imagency.cn/jc/5553/26/6d746bc0bb236ee686bc0d5ae9680c88.jpg"],
+    bannerImage: "https://bee-reg-ab.imagency.cn/mr/5553/26/f135de13bed3749c370259374a46eb82.jpg",
     palette: [
       { name: "Grasse Rose", hex: "#bf9478", textColor: "#ffffff" },
       { name: "Alabaster White", hex: "#fafaf9" },
@@ -123,8 +123,11 @@ export const ALL_PROJECTS: Project[] = [
     price: "$68",
     descriptionEn: "A series of sleep, focus and calm botanicals housed in heavy amber glass droppers with contrasting white text ratios, highlighting sensory relief and high psychological safety.",
     descriptionCn: "专为安神、专注及释压调配的情绪植物药液，采用厚重深褐玻璃和高宽比极高的纤细英文设计，透露出宁静的感官疗愈力量与沉浸式的心理安全感。",
-    images: ["assets/image5.jpg"],
-    bannerImage: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://bee-reg-ab.imagency.cn/mr/5553/26/32955bbbe361eeaad234c765a11aa932.jpg",
+      "https://bee-reg-ab.imagency.cn/mr/5553/26/b6316363a9025dfc1cefaf37ae6f4bde.jpg"
+    ],
+    bannerImage: "https://bee-reg-ab.imagency.cn/mr/5553/26/32955bbbe361eeaad234c765a11aa932.jpg",
     palette: [
       { name: "Deep Amber", hex: "#451a03", textColor: "#ffffff" },
       { name: "Amber Highlight", hex: "#9a3412", textColor: "#ffffff" },
@@ -177,8 +180,13 @@ export const ALL_PROJECTS: Project[] = [
     price: "$32",
     descriptionEn: "An eco-friendly, ultra-minimal mineral supplement jar focusing on absolute clean typography. Features generous negative space and a striking black-on-white circular branding stamp.",
     descriptionCn: "一款环保、极致简约的矿物活性洁齿补剂粉。大面积无机留白配以醒目的黑色双环圆形品牌印章，代表天然环保与硬核科研的和谐共存。",
-    images: ["assets/image7.jpg"],
-    bannerImage: "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://bee-reg-ab.imagency.cn/mr/5553/26/40e3ccb38ffb79cc09a7ed5ed54fc44e.jpg",
+      "https://bee-reg-ab.imagency.cn/mr/5553/26/4831219878f872075134311839d156af.jpg",
+      "https://bee-reg-ab.imagency.cn/mr/5553/26/8d89f03e928b387c87031d1ae3118fbc.jpg",
+      "https://bee-reg-ab.imagency.cn/mr/5553/26/3ced29557f717f8858fa2077bd483ca4.jpg"
+    ],
+    bannerImage: "https://bee-reg-ab.imagency.cn/mr/5553/26/40e3ccb38ffb79cc09a7ed5ed54fc44e.jpg",
     palette: [
       { name: "Pure Chalk", hex: "#ffffff" },
       { name: "Charcoal stamp", hex: "#000000", textColor: "#ffffff" },
@@ -202,8 +210,11 @@ export const ALL_PROJECTS: Project[] = [
     price: "$78",
     descriptionEn: "High-potency antioxidant serum stored in reflective frosted jars with a signature burnt orange brand palette, capturing intense cellular vitality and warm modern luxury.",
     descriptionCn: "富含细胞活性的高浓度抗氧化发光凝露。磨砂高白玻璃器皿配以一抹画龙点睛的炙热珊瑚橙色标，完美诠释细胞能量与温暖轻奢品牌美学。",
-    images: ["assets/image8.jpg"],
-    bannerImage: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/d2ae454a40b90a63e1d4d958d82cf1d3.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/2fbb5c52e5d824b6f8baa4c63558a4f0.jpg"
+    ],
+    bannerImage: "https://bee-reg-ac.imagency.cn/jc/5553/26/d2ae454a40b90a63e1d4d958d82cf1d3.jpg",
     palette: [
       { name: "Sunset Orange", hex: "#f44a22", textColor: "#ffffff" },
       { name: "Midnight Ash", hex: "#111111", textColor: "#ffffff" },
@@ -227,8 +238,12 @@ export const ALL_PROJECTS: Project[] = [
     price: "$110",
     descriptionEn: "Liby Master Fragrance Grasse Rose Hand Soap, infused with precious Grasse rose water and essential oils, delivers a French salon-grade luxury hand washing experience.",
     descriptionCn: "立白大师香氛格拉斯玫瑰洗手液，蕴含格拉斯珍贵玫瑰花水与精油，带来法式优雅的沙龙香氛洗手体验。泡沫绵密，温和洁净，令双手散发持久迷人芬芳。",
-    images: ["https://i.ibb.co/T6GgD7b/image-09.jpg"],
-    bannerImage: "https://i.ibb.co/T6GgD7b/image-09.jpg",
+    images: [
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/383a693971edc091b487c992d29a2eef.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/30d54909285c6e78deb144de4831e4f8.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/0c79db9fec8ed684d0942722d78fdf8d.jpg"
+    ],
+    bannerImage: "https://bee-reg-ac.imagency.cn/jc/5553/26/383a693971edc091b487c992d29a2eef.jpg",
     palette: [
       { name: "Grasse Rose", hex: "#bf9478", textColor: "#ffffff" },
       { name: "Alabaster White", hex: "#fafafa" },
@@ -252,8 +267,12 @@ export const ALL_PROJECTS: Project[] = [
     price: "$52",
     descriptionEn: "A high-latitude plant extract featuring matte dark green essence droplets on translucent premium glass, conveying pure subzero forests and deep minimalist clarity.",
     descriptionCn: "提取自北欧原始松针的高纯度原液。瓶身使用冷灰半透明喷砂表面，配以沉稳的墨苔绿标志，旨在表现北欧森林的冷冽与极致简洁的技术纯净感。",
-    images: ["assets/image10.jpg"],
-    bannerImage: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/e2866138bc43bc43c6a8e235c604b0e8.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/f00ca3e63a7919abdd941a03049e697b.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/e1674b457f01d45426b5fa20b5b2a4b7.jpg"
+    ],
+    bannerImage: "https://bee-reg-ac.imagency.cn/jc/5553/26/e2866138bc43bc43c6a8e235c604b0e8.jpg",
     palette: [
       { name: "Boreal Forest", hex: "#14532d", textColor: "#ffffff" },
       { name: "Nordic Mist", hex: "#f1f5f9" },
@@ -277,8 +296,13 @@ export const ALL_PROJECTS: Project[] = [
     price: "$48",
     descriptionEn: "Traditional East-Asian wellness elements reimagined in modern typography and earth-friendly pouches, marrying clean Swiss layout grid with deep calligraphic essence.",
     descriptionCn: "采用东方草本植物调和的养身冲剂系列。包装选用带有杂质微粒的手工粗糙触感纤维袋，将瑞士现代网格系统与远古神秘东方本草理念巧妙联结。",
-    images: ["assets/image11.jpg"],
-    bannerImage: "https://images.unsplash.com/photo-1563170351-be82bc888bb4?q=80&w=1200&auto=format&fit=crop",
+    images: [
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/7f559ebc7076ef1b548c40d54abb785d.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/80c96775492cc027d372760b2526f0a3.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/ecbb9c1b5bef5f267c83647982f88f6a.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/69241d4bb5ae57c2b3712fbb9abf78de.jpg"
+    ],
+    bannerImage: "https://bee-reg-ac.imagency.cn/jc/5553/26/7f559ebc7076ef1b548c40d54abb785d.jpg",
     palette: [
       { name: "Clay Earth", hex: "#7c2d12", textColor: "#ffffff" },
       { name: "Rice Husk", hex: "#f5f5f4" },
@@ -303,10 +327,12 @@ export const ALL_PROJECTS: Project[] = [
     descriptionEn: "Liby and Loopy IP crossover collaboration series, combining cheerful character visuals with high-performance cleaning essentials.",
     descriptionCn: "立白与人气IP Loopy跨界联名定制系列，将萌趣可爱的IP形象与专业高效的洗护产品深度融合。",
     images: [
-      "https://i.ibb.co/7xj5zDvc/libaixloopy-ip-01.jpg",
-      "https://i.ibb.co/jvg9ncvc/libaixloopy-ip-02.jpg"
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/3d7264a22bc830431f7f55c3ccdf9b84.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/8388a67c3dff018e96e8bb8a71b81eab.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/e2b5a36a7e0422e1742f04db7d21e7eb.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/e9727cdc699b8dcb5749b6f140649600.jpg"
     ],
-    bannerImage: "https://i.ibb.co/mVwjt6Cx/inage-10.jpg",
+    bannerImage: "https://bee-reg-ac.imagency.cn/jc/5553/26/3d7264a22bc830431f7f55c3ccdf9b84.jpg",
     palette: [
       { name: "Loopy Pink", hex: "#f472b6", textColor: "#ffffff" },
       { name: "Pure White", hex: "#ffffff" },
@@ -330,11 +356,11 @@ export const ALL_PROJECTS: Project[] = [
     descriptionEn: "Zhijing pure botanical skincare series, focusing on natural plant extracts and sustainable minimal aesthetics.",
     descriptionCn: "植境纯净植物草本护肤系列，专注天然植物萃取与可持续极简美学，为肌肤带来纯粹滋养。",
     images: [
-      "https://i.ibb.co/k2FN5nFC/zhijing-02.jpg",
-      "https://i.ibb.co/q3B8Wbfs/zhijing-03.jpg",
-      "https://i.ibb.co/bR8T444K/zhijing-01.jpg"
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/5b08244a79b310e28d641e5c4f15824f.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/87f8e926879d6f761bb4bf52caa0de17.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/261fcfcdeb851b502706842a34313b68.jpg"
     ],
-    bannerImage: "https://i.ibb.co/B24JfZkR/inage-13.jpg",
+    bannerImage: "https://bee-reg-ac.imagency.cn/jc/5553/26/5b08244a79b310e28d641e5c4f15824f.jpg",
     palette: [
       { name: "Forest Sage", hex: "#4d7c0f", textColor: "#ffffff" },
       { name: "Botanical Cream", hex: "#f5f5f4" },
@@ -357,8 +383,11 @@ export const ALL_PROJECTS: Project[] = [
     price: "$105",
     descriptionEn: "QEOSY luxury botanical essence oil, crafted with rare botanical extracts to nourish and illuminate skin.",
     descriptionCn: "QEOSY 奢华植物精油，萃取珍稀植物精粹，深层滋养肌肤，重现肌肤自然光泽与透亮质感。",
-    images: ["https://i.ibb.co/G4wFnYKy/inage-15.jpg"],
-    bannerImage: "https://i.ibb.co/G4wFnYKy/inage-15.jpg",
+    images: [
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/02f36a624a908795617a960a220c194b.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/1ae63b970a2431acda2e8ff459484c1b.jpg"
+    ],
+    bannerImage: "https://bee-reg-ac.imagency.cn/jc/5553/26/02f36a624a908795617a960a220c194b.jpg",
     palette: [
       { name: "Satin Amber", hex: "#b45309" },
       { name: "Onyx Black", hex: "#111111", textColor: "#ffffff" },
@@ -383,10 +412,10 @@ export const ALL_PROJECTS: Project[] = [
     descriptionEn: "Liby Master Fragrance Laundry Care with natural extracts and long-lasting scent.",
     descriptionCn: "立白大师香氛洗衣天然护理，萃取天然香氛精华，温和洁净，持久留香。",
     images: [
-      "https://i.ibb.co/2YqrRYh8/libaixloopy-ip-01.jpg",
-      "https://i.ibb.co/VkFxScT/libaixloopy-ip-02.jpg"
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/02f36a624a908795617a960a220c194b.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/1ae63b970a2431acda2e8ff459484c1b.jpg"
     ],
-    bannerImage: "https://i.ibb.co/2YqrRYh8/libaixloopy-ip-01.jpg",
+    bannerImage: "https://bee-reg-ab.imagency.cn/mr/5553/26/0b265abf9fcf20879e4aa3d87563b790.jpg",
     palette: [
       { name: "Pure White", hex: "#ffffff" },
       { name: "Fresh Blue", hex: "#2563eb", textColor: "#ffffff" }
@@ -408,8 +437,12 @@ export const ALL_PROJECTS: Project[] = [
     price: "$88",
     descriptionEn: "Xiaobai Minimalist skincare series with pure formula and soft matte packaging.",
     descriptionCn: "小白美妆极简纯净护肤系列，以极简哑光质感与纯粹设计呈现，给予肌肤无负担的温柔呵护。",
-    images: ["https://i.ibb.co/TBWdKGJX/inage-10.jpg"],
-    bannerImage: "https://i.ibb.co/TBWdKGJX/inage-10.jpg",
+    images: [
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/8033f033637eb37d0f11c1e1ae2e99ae.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/8e08f95b65381fd7abd789caa7742474.jpg",
+      "https://bee-reg-ac.imagency.cn/jc/5553/26/075185d30f1b7a4a410841dafac92f0f.jpg"
+    ],
+    bannerImage: "https://bee-reg-ac.imagency.cn/jc/5553/26/8033f033637eb37d0f11c1e1ae2e99ae.jpg",
     palette: [
       { name: "Soft Porcelain", hex: "#f5f5f4" },
       { name: "Pure White", hex: "#ffffff" },
@@ -437,7 +470,7 @@ export const ALL_PROJECTS: Project[] = [
       "https://bee-reg-ac.imagency.cn/jc/5553/26/ac9c690a69dbd9b2ea15201ae9623a19.jpg",
       "https://bee-reg-ab.imagency.cn/mr/5553/26/6e94c1a914d0aa1fd44ee46e6c41fa29.jpg"
     ],
-    bannerImage: "https://i.ibb.co/nMyvkqpp/image-01.jpg",
+    bannerImage: "https://bee-reg-ab.imagency.cn/mr/5553/26/acd6ca8dcf7a77fea8476bb836c2ff51.jpg",
     palette: [
       { name: "Soft Peach", hex: "#fbcfe8" },
       { name: "Silk White", hex: "#ffffff" },
@@ -685,23 +718,23 @@ export function getProjectImage(project: Project, index: number = 0): string {
 
   // Otherwise, return fallback premium high-resolution links from Unsplash matching the mood
   const fallbacks: Record<string, string> = {
-    "selected-4": "https://i.ibb.co/931N38YD/image-04.jpg",  // Grasse Rose Hand Cream
-    "libai-handrose": "https://i.ibb.co/LDFtCJPK/libai-01.jpg",  // Liby Grasse Rose Hand Cream
-    "xiaobai-laundry": "https://i.ibb.co/Kj08T5RB/image-05.jpg",
-    "xiaobai-shoe-cleaner": "https://i.ibb.co/3yh20b2X/image-07.jpg",
-    "sylvia-scentcard": "https://i.ibb.co/VcbWDKKv/image-08.jpg",
-    "libai-loopy-laundry": "https://i.ibb.co/2YqrRYh8/libaixloopy-ip-01.jpg",
-    "tempo-peach": "https://i.ibb.co/nMyvkqpp/image-01.jpg",
+    "selected-4": "https://bee-reg-ab.imagency.cn/mr/5553/26/f135de13bed3749c370259374a46eb82.jpg",  // Grasse Rose Hand Cream
+    "libai-handrose": "https://bee-reg-ac.imagency.cn/jc/5553/26/6d746bc0bb236ee686bc0d5ae9680c88.jpg",  // Liby Grasse Rose Hand Cream
+    "xiaobai-laundry": "https://bee-reg-ab.imagency.cn/mr/5553/26/98cb0eb20ac382eb24fbb7c646149a8b.jpg",
+    "xiaobai-shoe-cleaner": "https://bee-reg-ab.imagency.cn/mr/5553/26/b6331dbe894287a1d58d342627f48ffe.jpg",
+    "sylvia-scentcard": "https://bee-reg-ab.imagency.cn/mr/5553/26/b5a30c0c750a0b8a9834d3303f520514.jpg",
+    "libai-loopy-laundry": "https://bee-reg-ac.imagency.cn/jc/5553/26/02f36a624a908795617a960a220c194b.jpg",
+    "tempo-peach": "https://bee-reg-ab.imagency.cn/mr/5553/26/acd6ca8dcf7a77fea8476bb836c2ff51.jpg",
     "selected-5": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=1000&auto=format&fit=crop",  // Amber dropper
     "selected-6": "https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=1000&auto=format&fit=crop",  // Glass skincare water
     "selected-7": "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1000&auto=format&fit=crop",  // Pure organic jar
     "selected-8": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1000&auto=format&fit=crop",  // Cosmetic orange vibe
-    "selected-9": "https://i.ibb.co/T6GgD7b/image-09.jpg",  // Grasse Rose Hand Soap
+    "selected-9": "https://bee-reg-ab.imagency.cn/mr/5553/26/aad781f400d1fe6e4da627fa0aa586a7.jpg",  // Grasse Rose Hand Soap
     "selected-10": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?q=80&w=1000&auto=format&fit=crop", // Green/herbal bottle
     "selected-11": "https://images.unsplash.com/photo-1563170351-be82bc888bb4?q=80&w=1000&auto=format&fit=crop", // Amber classic jar
-    "selected-12": "https://i.ibb.co/mVwjt6Cx/inage-10.jpg", // Libai x Loopy
-    "selected-13": "https://i.ibb.co/B24JfZkR/inage-13.jpg",
-    "selected-14": "https://i.ibb.co/G4wFnYKy/inage-15.jpg",
+    "selected-12": "https://bee-reg-ab.imagency.cn/mr/5553/26/0b265abf9fcf20879e4aa3d87563b790.jpg", // Libai x Loopy
+    "selected-13": "https://bee-reg-ab.imagency.cn/mr/5553/26/03f3ed5aea7a7c6707bbc072ed352917.jpg",
+    "selected-14": "https://bee-reg-ab.imagency.cn/mr/5553/26/e455fab099eb982838a8bdae2b7455c2.jpg",
     "more-1": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop",     // Coding/design layout
     "more-2": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop",     // Studio mic / ambient noise
     "more-3": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1000&auto=format&fit=crop"      // Stark architectural shape
