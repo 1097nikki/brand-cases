@@ -157,6 +157,30 @@ const ONLINE_IMAGE_FALLBACKS: Record<string, string[]> = {
     "https://bee-reg-ab.imagency.cn/mr/5553/26/a62d03694350018a6b1e41e19595adf0.jpg",
     "https://bee-reg-ac.imagency.cn/jc/5553/26/ac9c690a69dbd9b2ea15201ae9623a19.jpg",
     "https://bee-reg-ab.imagency.cn/mr/5553/26/6e94c1a914d0aa1fd44ee46e6c41fa29.jpg"
+  ],
+  "naturo-soap": [
+    "https://bee-reg-ab.imagency.cn/mr/5553/26/40e3ccb38ffb79cc09a7ed5ed54fc44e.jpg",
+    "https://bee-reg-ab.imagency.cn/mr/5553/26/4831219878f872075134311839d156af.jpg",
+    "https://bee-reg-ab.imagency.cn/mr/5553/26/8d89f03e928b387c87031d1ae3118fbc.jpg",
+    "https://bee-reg-ab.imagency.cn/mr/5553/26/3ced29557f717f8858fa2077bd483ca4.jpg"
+  ],
+  "sylvia-scentcard": [
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/e2866138bc43bc43c6a8e235c604b0e8.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/a58eab38206e6e654aa05c81d98d46fc.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/f1c394e9dfe158eadb32a22a1eab3ae1.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/f00ca3e63a7919abdd941a03049e697b.jpg"
+  ],
+  "xiaobai-shoe-cleaner": [
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/053572bb06fe727ec68bb237eb451156.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/8f071ca3132015a452e9b238a29d694f.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/c2ceb6bed48d98f954b8dfb75e40ac45.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/e32bae9992f49483900cba2dae35482d.jpg"
+  ],
+  "xiaobai-laundry": [
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/69241d4bb5ae57c2b3712fbb9abf78de.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/7f559ebc7076ef1b548c40d54abb785d.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/ecbb9c1b5bef5f267c83647982f88f6a.jpg",
+    "https://bee-reg-ac.imagency.cn/jc/5553/26/80c96775492cc027d372760b2526f0a3.jpg"
   ]
 };
 
@@ -197,6 +221,18 @@ export default function ProjectDetail({ projectId, onClose, onNavigate }: Projec
   const project: Project | undefined = currentId
     ? ALL_PROJECTS.find(p => p.id === currentId || (currentId === 'libai-loopy-laundry' && p.id === 'selected-15'))
     : undefined;
+
+  useEffect(() => {
+    console.log('[ProjectDetail] ID verification check:', {
+      propProjectId: projectId,
+      resolvedCurrentId: currentId,
+      windowHash: typeof window !== 'undefined' ? window.location.hash : '',
+      matchedInAllProjects: Boolean(project),
+      matchedProjectId: project?.id || null,
+      matchedProjectTitle: project?.titleCn || null,
+      isMatchValid: Boolean(currentId && project && currentId === project.id)
+    });
+  }, [projectId, currentId, project]);
 
   // Safe handler to close detail view and clean URL hash
   const handleClose = useCallback(() => {

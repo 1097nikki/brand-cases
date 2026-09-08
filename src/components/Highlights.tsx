@@ -274,12 +274,18 @@ export default function Highlights({ onSelectProject }: HighlightsProps) {
                 variants={cardVariants}
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.3 }}
-                onClick={() => onSelectProject(item.projectId)}
+                onClick={() => {
+                  if (typeof window !== 'undefined') {
+                    window.location.hash = `#/project/${item.projectId}`;
+                  }
+                  onSelectProject(item.projectId);
+                }}
                 className="relative w-[447px] h-[586px] flex-shrink-0 bg-neutral-900/5 rounded-none overflow-hidden select-text shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.07)] transition-all duration-300 cursor-pointer border border-neutral-100"
               >
                 <img
                   src={item.image}
                   alt={t(item.titleCn, item.titleEn)}
+                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover filter brightness-[0.97] transition-transform duration-700 ease-out hover:scale-103"
                   loading="lazy"
                 />

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -20,18 +20,40 @@ import ProductShowcase from './components/ProductShowcase';
 import AestheticBanner from './components/AestheticBanner';
 import ShowcaseBanner from './components/ShowcaseBanner';
 import MoreWorks from './components/MoreWorks';
-import ProjectDetail from './components/ProjectDetail';
+import ProjectDetail, { getProjectIdFromHash } from './components/ProjectDetail';
 import { ALL_PROJECTS } from './data';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import { CornerDownRight } from 'lucide-react';
 
 function AppContent() {
-  const [selectedProjectId, setSelectedProjectId] = useState<string | null>(null);
+  const [selectedProjectId, setSelectedProjectId] = useState<string | null>(() => getProjectIdFromHash(null));
   const { language, t } = useLanguage();
+
+  // Listen to hashchange / popstate for browser back/forward and WeChat / mobile Safari URL navigation
+  useEffect(() => {
+    const handleHashChange = () => {
+      const idFromHash = getProjectIdFromHash(null);
+      setSelectedProjectId(idFromHash);
+      if (idFromHash) {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange, { passive: true });
+    window.addEventListener('popstate', handleHashChange, { passive: true });
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener('popstate', handleHashChange);
+    };
+  }, []);
 
   // Smooth scroll helper when opening projects
   const handleSelectProject = (id: string) => {
     setSelectedProjectId(id);
+    if (typeof window !== 'undefined') {
+      window.location.hash = `#/project/${id}`;
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

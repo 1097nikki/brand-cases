@@ -90,7 +90,8 @@ export default function SelectedWorks({ onSelectProject }: SelectedWorksProps) {
             className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[0.2cm]"
           >
             {Array.from({ length: 16 }).map((_, index) => {
-              const project = selectedProjects[index % selectedProjects.length];
+              const targetProjectId = `selected-${index + 1}`;
+              const project = ALL_PROJECTS.find(p => p.id === targetProjectId) || selectedProjects[index % selectedProjects.length];
               const feedImages = [
                 "https://bee-reg-ab.imagency.cn/mr/5553/26/c7889947de209fbe48f88c8ffe43f5f6.jpg",
                 "https://bee-reg-ab.imagency.cn/mr/5553/26/f572d3d07d5f1d47f2a8b09888a01a92.jpg",
@@ -110,14 +111,16 @@ export default function SelectedWorks({ onSelectProject }: SelectedWorksProps) {
                 "https://bee-reg-ab.imagency.cn/mr/5553/26/e455fab099eb982838a8bdae2b7455c2.jpg"
               ];
               const imageSrc = feedImages[index] || getProjectImage(project);
-              const targetProjectId = index === 11 ? 'selected-12' : index === 12 ? 'selected-13' : index === 13 ? 'selected-14' : index === 14 ? 'libai-loopy-laundry' : index === 15 ? 'selected-16' : project.id;
-              const targetProject = ALL_PROJECTS.find(p => p.id === targetProjectId) || project;
-              const isDisabledCard = index === 1 || index === 2 || project.id === 'selected-3' || index === 3 || project.id === 'selected-4' || index === 14 || Boolean(targetProject.disableDetail || targetProject.disabled);
+              const targetProject = project;
+              const isDisabledCard = index === 1 || index === 2 || targetProjectId === 'selected-3' || index === 3 || targetProjectId === 'selected-4' || index === 5 || index === 14 || Boolean(targetProject.disableDetail || targetProject.disabled);
               return (
                 <div
-                  key={`${targetProjectId}-${index}`}
+                  key={targetProjectId}
                   onClick={() => {
                     if (!isDisabledCard) {
+                      if (typeof window !== 'undefined') {
+                        window.location.hash = `#/project/${targetProjectId}`;
+                      }
                       onSelectProject(targetProjectId);
                     }
                   }}

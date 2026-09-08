@@ -74,7 +74,7 @@ const WORK_ITEMS: WorkItem[] = [
     dateEn: "08 FEBRUARY 2025",
     dateCn: "2025年2月8日",
     views: "5120",
-    projectId: "libai-handrose"
+    projectId: "selected-4"
   },
   {
     id: "work-5",
@@ -88,7 +88,7 @@ const WORK_ITEMS: WorkItem[] = [
     dateEn: "14 JANUARY 2025",
     dateCn: "2024年1月14日",
     views: "3892",
-    projectId: "xiaobai-laundry"
+    projectId: "sylvia-scentcard"
   },
   {
     id: "work-6",
@@ -131,7 +131,7 @@ const WORK_ITEMS: WorkItem[] = [
     dateEn: "15 SEPTEMBER 2024",
     dateCn: "2024年9月15日",
     views: "4190",
-    projectId: "sylvia-scentcard"
+    projectId: "xiaobai-laundry"
   },
   {
     id: "work-9",
@@ -258,18 +258,23 @@ export default function WorkSlider({ onSelectProject }: WorkSliderProps) {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 justify-items-center w-full"
           >
             {currentPageItems.map((item) => {
-              const isHandSoap = item.id === 'work-9' || item.projectId === 'selected-9';
               return (
                 <div
                   key={item.id}
                   onClick={() => {
-                    if (!isHandSoap) {
-                      onSelectProject(item.projectId);
+                    console.log('[The-Highlights] Click card:', {
+                      cardUniqueId: item.id,
+                      cardTitle: item.titleCn,
+                      passedProjectId: item.projectId,
+                      previousHash: typeof window !== 'undefined' ? window.location.hash : ''
+                    });
+                    if (typeof window !== 'undefined') {
+                      window.location.hash = `#/project/${item.projectId}`;
                     }
+                    console.log('[The-Highlights] New hash after click:', typeof window !== 'undefined' ? window.location.hash : '');
+                    onSelectProject(item.projectId);
                   }}
-                  className={`group relative w-full max-w-[419px] aspect-[419/583] bg-neutral-50 rounded-none overflow-hidden shadow-xs border border-neutral-100/30 ${
-                    isHandSoap ? 'cursor-default' : 'cursor-pointer'
-                  }`}
+                  className="group relative w-full max-w-[419px] aspect-[419/583] bg-neutral-50 rounded-none overflow-hidden shadow-xs border border-neutral-100/30 cursor-pointer"
                 >
                   {/* 1. Card Image Cover */}
                   <img
@@ -277,15 +282,11 @@ export default function WorkSlider({ onSelectProject }: WorkSliderProps) {
                     alt={item.titleEn}
                     referrerPolicy="no-referrer"
                     loading="lazy"
-                    className={`w-full h-full object-contain transition-transform duration-[1200ms] ease-[0.16,1,0.3,1] ${
-                      isHandSoap ? '' : 'group-hover:scale-[1.04]'
-                    }`}
+                    className="w-full h-full object-contain transition-transform duration-[1200ms] ease-[0.16,1,0.3,1] group-hover:scale-[1.04]"
                   />
 
                   {/* 2. Soft darkening overlay */}
-                  <div className={`absolute inset-0 bg-neutral-950/5 transition-colors duration-500 ${
-                    isHandSoap ? '' : 'group-hover:bg-neutral-950/10'
-                  }`} />
+                  <div className="absolute inset-0 bg-neutral-950/5 transition-colors duration-500 group-hover:bg-neutral-950/10" />
 
                   {/* 3. Floating category label perfectly matching screenshot placements */}
                   <div className="absolute bottom-[202px] right-6 z-20">
@@ -301,9 +302,7 @@ export default function WorkSlider({ onSelectProject }: WorkSliderProps) {
                   </div>
 
                   {/* 4. Overlay Content card floating in bottom area */}
-                  <div className={`absolute bottom-6 left-6 right-6 bg-white py-2.5 px-4 sm:py-3 sm:px-5 z-10 shadow-[0_8px_30px_rgb(0,0,0,0.02)] transition-transform duration-[1000ms] ease-[0.16,1,0.3,1] ${
-                    isHandSoap ? '' : 'group-hover:translate-y-[-4px]'
-                  }`}>
+                  <div className="absolute bottom-6 left-6 right-6 bg-white py-2.5 px-4 sm:py-3 sm:px-5 z-10 shadow-[0_8px_30px_rgb(0,0,0,0.02)] transition-transform duration-[1000ms] ease-[0.16,1,0.3,1] group-hover:translate-y-[-4px]">
                     {/* Subtitle description */}
                     <p className="text-[12px] sm:text-[13px] text-neutral-500 font-sans leading-relaxed truncate">
                       {t(item.descCn, item.descEn)}
