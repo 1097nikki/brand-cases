@@ -23,11 +23,16 @@ jobs:
       - name: Run Vite Build
         run: npm run build
 
-      # 调试：打印dist目录，确认打包是否产出文件
-      - name: Check dist output
+      - name: Check dist folder
         run: |
           ls -la
-          ls -la dist
+          if [ -d "dist" ]; then
+            echo "✅ dist文件夹存在"
+            ls -la dist
+          else
+            echo "❌ dist文件夹不存在，打包失败！"
+            exit 1
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
