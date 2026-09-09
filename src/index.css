@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", "Heiti SC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", "Heiti SC", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", "Heiti SC", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#ffffff] text-[#111111] antialiased selection:bg-neutral-200 selection:text-black overflow-x-hidden;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #dbdbdb;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b1b1b1;
+}
+
+/* Low-saturation and minimalist layout custom utility classes */
+.tracking-tight-titles {
+  letter-spacing: -0.04em;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px currentColor;
+}
+
+/* 1.3x Proportional Scaling wrapper on wider desktop screens */
+@media (min-width: 1024px) {
+  .app-scale-container {
+    zoom: 1.30;
+  }
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Nikki Portfolio",
+  "description": "A premium minimalist brand VI and packaging design portfolio showcase, featuring sophisticated health supplement brandings with high-contrast layouts and smooth transitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
