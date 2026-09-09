@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # 删掉 cache: 'npm'，不再读取lock文件
 
       - name: Install dependencies
         run: npm install
