@@ -20,12 +20,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Build
+      - name: Run Vite Build
         run: npm run build
-      
-      # 新增：打印dist目录文件，方便调试
-      - name: List dist files
-        run: ls -la dist
+
+      # 调试：打印dist目录，确认打包是否产出文件
+      - name: Check dist output
+        run: |
+          ls -la
+          ls -la dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
